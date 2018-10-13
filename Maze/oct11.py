@@ -2,7 +2,15 @@ import maze, stack, location
 
 
 m = maze.Maze("maze1.txt")
-print(m)
-s = stack.Stack()
-loc = location.Location(2,3)
-print(loc)
+m, s = m.solve_it()
+'''for loc in s:
+    print(loc)
+'''
+
+for row in m:
+    for mark in row:
+        print(mark, end='')
+    print()
+
+
+
